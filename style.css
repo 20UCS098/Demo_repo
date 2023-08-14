@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+    padding: 10px 10px;
+    background-color: white;
+    /* min-height: 100vh; */
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+}
+
+.navigate {
+    /* margin-left: 10px;
+    padding-left: 5px; */
+    position: fixed;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    width: 70px;
+    height: 400px;
+    background-color: rgb(92, 88, 88);
+    border-radius: 10px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1), 0 15px 20px rgba(0, 0, 0, 0.1), 0 15px 30px rgba(0, 0, 0, 0.1), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.navigate ul {
+    position: absolute;
+    width: 50%;
+}
+
+.navigate ul li {
+    margin: 5px;
+    display: flex;
+    padding: 10px 20px;
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    /* top: 10px;
+    bottom: 10px; */
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    /* border: 3px solid rgb(92, 88, 88); */
+    /* box-sizing: border-box; */
+    border-radius: 10px;
+}
+
+.navigate ul li:hover {
+    background-color: #3ad6ab;
+    box-shadow: 0 5px 4px #3ad6ab;
+}
+
+.navigate ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+.navigate ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.navigate ul li a .icon ion-icon {
+    padding-top: 20px;
+    font-size: 30px;
+    align-items: center;
+    align-content: center;
+    padding-right: 20px;
+}
+
+.navigate ul li:hover a .icon ion-icon {
+    font-size: 40px;
+}
+
+.navigate ul li a .text {
+    position: absolute;
+    left: 50px;
+    color: black;
+    display: block;
+    width: auto;
+    padding: 10px 10px;
+    transform: translateY(-15%) translateX(0px);
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgb(29, 24, 24);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.navigate ul li:hover a .text {
+    transform: translateY(-15%) translateX(15px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.navigate ul li a .text::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 7px;
+    background-color: #fff;
+    transform: rotate(45deg) translateX(-100%);
+    box-shadow: 0px 0px 0px rgb(29, 24, 24);
+}
+
+.main {
+    margin-left: 180px;
+}
